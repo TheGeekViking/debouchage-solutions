@@ -563,18 +563,18 @@
     <section>
       <div class="bg-gray-900">
         <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8 lg:py-40">
-          <div class="mx-auto max-w-4xl divide-y divide-white/10">
+          <div class="faq mx-auto max-w-4xl divide-y divide-white/10">
             <h2 class="text-2xl font-bold leading-10 tracking-tight text-white">
               Frequently asked questions
             </h2>
             <dl class="mt-10 space-y-6 divide-y divide-white/10">
               <!-- First Question -->
-              <div class="pt-6">
+              <div class="question pt-6">
                 <dt>
                   <!-- Expand/collapse question button -->
                   <button
                     type="button"
-                    class="flex w-full items-start justify-between text-left text-white"
+                    class="expand flex w-full items-start justify-between text-left text-white"
                     aria-controls="faq-0"
                     aria-expanded="false"
                     id="faqBtn1"
@@ -589,7 +589,7 @@
                         Item expanded: "hidden", Item collapsed: ""
                       -->
                       <svg
-                        class="h-6 w-6"
+                        class="plus h-6 w-6"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke-width="1.5"
@@ -609,7 +609,7 @@
                         Item expanded: "", Item collapsed: "hidden"
                       -->
                       <svg
-                        class="hidden h-6 w-6"
+                        class="minus hidden h-6 w-6"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke-width="1.5"
@@ -626,7 +626,7 @@
                     </span>
                   </button>
                 </dt>
-                <dd class="hidden mt-2 pr-12" id="faq-1">
+                <dd class="response hidden mt-2 pr-12" id="faq-1">
                   <p class="text-base leading-7 text-gray-300">
                     I don&#039;t know, but the flag is a big plus. Lorem ipsum
                     dolor sit amet consectetur adipisicing elit. Quas cupiditate
@@ -636,12 +636,12 @@
               </div>
 
               <!-- Second Question -->
-              <div class="pt-6">
+              <div class="question pt-6">
                 <dt>
                   <!-- Expand/collapse question button -->
                   <button
                     type="button"
-                    class="flex w-full items-start justify-between text-left text-white"
+                    class="expand flex w-full items-start justify-between text-left text-white"
                     aria-controls="faq-0"
                     aria-expanded="false"
                     id="faqBtn2"
@@ -656,7 +656,7 @@
                         Item expanded: "hidden", Item collapsed: ""
                       -->
                       <svg
-                        class="h-6 w-6"
+                        class="plus h-6 w-6"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke-width="1.5"
@@ -676,7 +676,7 @@
                         Item expanded: "", Item collapsed: "hidden"
                       -->
                       <svg
-                        class="hidden h-6 w-6"
+                        class="minus hidden h-6 w-6"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke-width="1.5"
@@ -693,7 +693,7 @@
                     </span>
                   </button>
                 </dt>
-                <dd class="hidden mt-2 pr-12" id="faq-2">
+                <dd class="response hidden mt-2 pr-12" id="faq-2">
                   <p class="text-base leading-7 text-gray-300">
                     I don&#039;t know, but the flag is a big plus. Lorem ipsum
                     dolor sit amet consectetur adipisicing elit. Quas cupiditate
@@ -703,12 +703,12 @@
               </div>
 
               <!-- Third Question -->
-              <div class="pt-6">
+              <div class="question pt-6">
                 <dt>
                   <!-- Expand/collapse question button -->
                   <button
                     type="button"
-                    class="flex w-full items-start justify-between text-left text-white"
+                    class="expand flex w-full items-start justify-between text-left text-white"
                     aria-controls="faq-0"
                     aria-expanded="false"
                     id="faqBtn3"
@@ -723,7 +723,7 @@
                         Item expanded: "hidden", Item collapsed: ""
                       -->
                       <svg
-                        class="h-6 w-6"
+                        class="plus h-6 w-6"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke-width="1.5"
@@ -743,7 +743,7 @@
                         Item expanded: "", Item collapsed: "hidden"
                       -->
                       <svg
-                        class="hidden h-6 w-6"
+                        class="minus hidden h-6 w-6"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke-width="1.5"
@@ -760,7 +760,7 @@
                     </span>
                   </button>
                 </dt>
-                <dd class="hidden mt-2 pr-12" id="faq-3">
+                <dd class="response hidden mt-2 pr-12" id="faq-3">
                   <p class="text-base leading-7 text-gray-300">
                     I don&#039;t know, but the flag is a big plus. Lorem ipsum
                     dolor sit amet consectetur adipisicing elit. Quas cupiditate
@@ -1151,6 +1151,7 @@
       </div>
     </footer>
 
+    <script src="js/FAQ.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

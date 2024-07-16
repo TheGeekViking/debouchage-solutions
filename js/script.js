@@ -12,4 +12,6 @@ btnHamburger.addEventListener("click", () => {
 });
 
 ///////////// FAQ
-(new FAQ(document.querySelector(".faq"))).init();
+new FAQ(document.querySelector(".faq")).init();
+
+////////// Carousel

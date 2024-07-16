@@ -4,6 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <style>.swiper-wrapper {
+      height: max-content !important;
+      -webkit-transition-timing-function: linear !important;
+      transition-timing-function: linear !important;
+      position: relative;
+      }
+    </style>
     <title>Simple Tailwind Starter</title>
   </head>
   <body>
@@ -538,10 +549,6 @@
     </section>
     <!-- Services Section End -->
 
-    <!-- Carousel Start -->
-
-    <!-- Carousel End -->
-
     <!-- FAQs Section Start -->
     <section>
       <div class="bg-gray-900">
@@ -757,6 +764,43 @@
       </div>
     </section>
     <!-- FAQs section end -->
+
+        <!-- Carousel Start -->
+        <section>
+          <div class="w-11/12 mx-auto my-24 relative">
+            <div class="swiper multiple-slide-carousel swiper-container relative">
+             <div class="swiper-wrapper pb-8 mb-16">
+               <div class="swiper-slide">
+                 <div class="bg-indigo-50 rounded-2xl h-96 flex justify-center items-center">
+                   <span class="text-2xl font-semibold text-indigo-600">Slide 1 </span>
+                 </div>
+               </div>
+               <div class="swiper-slide">
+                 <div class="bg-indigo-50 rounded-2xl h-96 flex justify-center items-center">
+                   <span class="text-2xl font-semibold text-indigo-600">Slide 2 </span>
+                 </div>
+               </div>
+               <div class="swiper-slide">
+                 <div class="bg-indigo-50 rounded-2xl h-96 flex justify-center items-center">
+                   <span class="text-2xl font-semibold text-indigo-600">Slide 3 </span>
+                 </div>
+               </div>
+               <div class="swiper-slide">
+                 <div class="bg-indigo-50 rounded-2xl h-96 flex justify-center items-center">
+                   <span class="text-2xl font-semibold text-indigo-600">Slide 4 </span>
+                 </div>
+               </div>
+             </div>
+             <div class="absolute flex justify-center items-center m-auto left-0 right-0 w-fit bottom-12">
+               <button id="slider-button-left" class="swiper-button-prev group !p-2 flex justify-center items-center !w-12 !h-12 transition-all duration-500 rounded-full !-translate-x-16" data-carousel-prev>
+    
+               </button>
+               <button id="slider-button-right" class="swiper-button-next group !p-2 flex justify-center items-center !w-12 !h-12 transition-all duration-500 rounded-full !translate-x-16" data-carousel-next>
+               </button>
+             </div>
+            </div>
+        </section>
+        <!-- Carousel End -->
 
     <!-- Contact Form Start -->
 
@@ -1136,5 +1180,36 @@
 
     <script src="js/FAQ.js"></script>
     <script src="js/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".multiple-slide-carousel", {
+         loop: true,
+         slidesPerView: 3,
+         spaceBetween: 20,
+         navigation: {
+           nextEl: ".multiple-slide-carousel .swiper-button-next",
+           prevEl: ".multiple-slide-carousel .swiper-button-prev",
+         },
+         breakpoints: {
+          1920: {
+              slidesPerView: 1,
+              spaceBetween: 30
+          },
+          1028: {
+              slidesPerView: 3,
+              spaceBetween: 30
+          },
+          500: {
+              slidesPerView: 1,
+              spaceBetween: 0
+          },
+          250: {
+              slidesPerView: 1,
+              spaceBetween: 0
+          }
+        }
+       });
+    </script>
   </body>
 </html>

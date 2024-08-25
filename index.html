@@ -187,7 +187,7 @@
           class="absolute inset-0 -z-10 bg-gradient-to-r from-blue-950 to-blue-700 opacity-90"
         ></div>
 
-        <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+        <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56 max-[440px]:px-6">
           <div class="hidden sm:mb-8 sm:flex sm:justify-center">
             <div class="relative px-3 py-1 text-2xl leading-6 text-blue-100">
               Problème de tuyaux ou de drains?
@@ -209,15 +209,17 @@
               là pour résoudre tous vos problèmes de drainage rapidement,
               efficacement et à des prix compétitifs.
             </p>
-            <div class="mt-10 flex items-center justify-center gap-x-6">
+            <div
+              class="mt-10 flex gap-4 max-[440px]:flex-col items-center justify-center"
+            >
               <a
                 href="tel:4505420991"
-                class="rounded-md transition ease-in-out delay-100 bg-blue-500 px-6 py-2.5 text-lg font-semibold text-white shadow-sm hover:bg-blue-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400"
+                class="max-[440px]:w-full rounded-md transition ease-in-out delay-100 bg-blue-500 px-6 py-2.5 text-lg font-semibold text-white shadow-sm hover:bg-blue-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400"
                 >450-542-0991</a
               >
               <a
                 href="#contact"
-                class="rounded-md transition ease-in-out delay-100 border border-blue-500 px-6 py-2.5 text-lg font-semibold leading-6 text-white hover:bg-blue-500"
+                class="max-[440px]:w-full rounded-md transition ease-in-out delay-100 border border-blue-500 px-6 py-2.5 text-lg font-semibold leading-6 text-white hover:bg-blue-500"
                 >Soumission Gratuite <span aria-hidden="true">→</span></a
               >
             </div>
@@ -1728,7 +1730,7 @@
           </div>
           <form
             name="contact"
-            action="#"
+            action="/submit.html"
             method="POST"
             data-netlify="true"
             onSubmit="submit"
